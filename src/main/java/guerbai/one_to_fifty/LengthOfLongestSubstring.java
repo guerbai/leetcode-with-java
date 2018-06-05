@@ -6,9 +6,8 @@ public class LengthOfLongestSubstring {
         int sLen = s.length();
         if (sLen<2) return sLen;
         int frontIndex = 0;
-        int endIndex = frontIndex + 1;
         int maxSubStringLen = 1;
-        while (endIndex<sLen) {
+        for (int endIndex=1; endIndex<sLen; endIndex++) {
             for (int j=frontIndex; j<endIndex; j++) {
                 if (s.charAt(j)==s.charAt(endIndex)) {
                     if (endIndex-frontIndex>maxSubStringLen) {
@@ -18,10 +17,9 @@ public class LengthOfLongestSubstring {
                     break;
                 }
             }
-            endIndex++;
         }
-        if (endIndex-frontIndex>maxSubStringLen) {
-            maxSubStringLen = endIndex-frontIndex;
+        if (sLen-frontIndex>maxSubStringLen) {
+            maxSubStringLen = sLen-frontIndex;
         }
         return maxSubStringLen;
     }
