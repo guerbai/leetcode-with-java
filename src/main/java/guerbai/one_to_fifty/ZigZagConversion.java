@@ -11,10 +11,8 @@ public class ZigZagConversion {
                 int j=0;
                 int nextIndex1 = i+j*(numRows+numRows-2);
                 int nextIndex2 = (j+1)*(numRows+numRows-2)-i;
-                while (nextIndex1<sLen || nextIndex2<sLen) {
-                    if (nextIndex1<sLen) {
-                        result.append(s.charAt(nextIndex1));
-                    }
+                while (nextIndex1<sLen) {
+                    result.append(s.charAt(nextIndex2));
                     if (nextIndex2<sLen) {
                         result.append(s.charAt(nextIndex2));
                     }
