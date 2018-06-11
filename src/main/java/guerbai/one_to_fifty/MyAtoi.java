@@ -37,20 +37,11 @@ public class MyAtoi {
             if (resultStringBuilder.charAt(i)!='0') break;
         }
         if (resultStringBuilder.length()-frontZeroLength>11) {
-            if (negative) {
-                return Integer.MIN_VALUE;
-            } else {
-                return Integer.MAX_VALUE;
-            }
+            return negative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
         }
         long resultLong = Long.parseLong(resultStringBuilder.toString());
-        if (resultLong>Integer.MAX_VALUE) {
-            return Integer.MAX_VALUE;
-        } else if (resultLong<Integer.MIN_VALUE) {
-            return Integer.MIN_VALUE;
-        } else {
-            return (int) resultLong;
-        }
+        return resultLong>Integer.MAX_VALUE ? Integer.MAX_VALUE :
+                resultLong<Integer.MIN_VALUE ? Integer.MIN_VALUE : (int) resultLong;
     }
 
     public static void main(String[] args) {
