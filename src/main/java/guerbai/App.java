@@ -10,6 +10,6 @@ public class App
     {
         System.out.println( "Hello World!" );
         String s = "abc";
-        System.out.println(s.substring(0, 2));
+        System.out.println(s.substring(0, 3));
     }
 }
