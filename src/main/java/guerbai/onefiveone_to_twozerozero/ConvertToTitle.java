@@ -5,6 +5,7 @@ public class ConvertToTitle {
         return (char)(65 + a);
     }
 
+    // 其实是10进制转26进制，而且0为A。
     private static String convertToTitle(int n) {
         StringBuilder sb = new StringBuilder();
         while (n > 0) {
