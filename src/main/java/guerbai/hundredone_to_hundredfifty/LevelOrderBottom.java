@@ -1,6 +1,7 @@
 package guerbai.hundredone_to_hundredfifty;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -8,7 +9,7 @@ public class LevelOrderBottom {
 
     private static void recursion(TreeNode root, int depth, List<List<Integer>> result) {
         if (root == null) return;
-        if (result.size() == depth) result.add(new ArrayList<>());
+        if (result.size() == depth) result.add(new ArrayList<Integer>());
         if (root.left != null) result.get(depth).add(root.left.val);
         if (root.right!= null) result.get(depth).add(root.right.val);
         recursion(root.left, depth+1, result);
