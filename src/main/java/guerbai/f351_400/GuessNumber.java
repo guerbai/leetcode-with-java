@@ -14,6 +14,7 @@ public class GuessNumber {
 
     // 这题巨恶心，首先，是计算mid的方法，可以防止溢出；
     // 还有l，r, 再取值的方式；
+    // 一种典型的二分搜索的取值渐近方法，值得记笔记；
     private static int guessNumber(int n) {
         int l = 1;
         int r = n;
