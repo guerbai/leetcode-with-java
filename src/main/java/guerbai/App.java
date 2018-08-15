@@ -10,7 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        int a = 4;
-        System.out.println(Integer.bitCount(a));
+        int a = 2;
+        System.out.println(true & (a == 1));
     }
 }
