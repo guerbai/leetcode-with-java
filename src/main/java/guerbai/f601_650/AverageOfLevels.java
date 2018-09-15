@@ -21,6 +21,9 @@ public class AverageOfLevels {
         }
     }
 
+    // 此是dfs解法，此外还有bfs解法
+    // https://leetcode.com/problems/average-of-levels-in-binary-tree/solution/
+    // 上面link有关于bfs的基本思想.
     private static List<Double> averageOfLevels(TreeNode root) {
         List<List<Double>> resultCollector = new ArrayList<>();
         recursion(root, 1, resultCollector);
