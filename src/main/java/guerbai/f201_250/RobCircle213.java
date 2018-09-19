@@ -4,17 +4,6 @@ import java.util.Arrays;
 
 public class RobCircle213 {
 
-//        if (nums.length == 5) {
-//            System.out.println(Arrays.toString(nums));
-//            System.out.println(Arrays.toString(Arrays.copyOfRange(nums, 1, nums.length-2)));
-//            System.out.println(Arrays.toString(Arrays.copyOfRange(nums, 2, nums.length-1)));
-//            System.out.println(Arrays.toString(Arrays.copyOfRange(nums, 0, nums.length-3)));
-//
-//            System.out.println(recursion(Arrays.copyOfRange(nums, 1, nums.length-2)) + nums[nums.length-1]);
-//            System.out.println(recursion(Arrays.copyOfRange(nums, 2, nums.length-1)) + nums[0]);
-//            System.out.println(recursion(Arrays.copyOfRange(nums, 0, nums.length-3)) + nums[nums.length-2]);
-//        }
-
 //        超时recursion解法，寻找与正确解法之间的差距；超时解法用了过多的copyOfRange，把线性变成了O(n2)，这是关键点;
 //        if (nums.length == 0) return 0;
 //        if (nums.length == 1) return nums[0];
