@@ -15,10 +15,6 @@ public class IsSubtree {
         if (s == null && t == null) return true;
         if (s == null) return false;
         if (t == null) return true;
-        if (s.val == t.val) {
-            return match(s, t) || isSubtree(s.left, t) || isSubtree(s.right, t);
-        } else {
-            return isSubtree(s.left, t) || isSubtree(s.right, t);
-        }
+        return match(s, t) || isSubtree(s.left, t) || isSubtree(s.right, t);
     }
 }
