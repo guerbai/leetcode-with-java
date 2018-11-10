@@ -1,4 +1,4 @@
-package guerbai.f901_f950;
+package guerbai.f901_950;
 
 public class IsLongPressedName {
 
