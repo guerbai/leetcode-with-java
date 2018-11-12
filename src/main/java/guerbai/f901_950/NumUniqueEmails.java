@@ -1,5 +1,8 @@
 package guerbai.f901_950;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class NumUniqueEmails {
 
     public int numUniqueEmails(String[] emails) {
