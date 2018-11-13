@@ -2,7 +2,7 @@ package guerbai.f901_950;
 
 public class SortArrayByParity {
 
-    private static int[] sortArrayByParity(int[] A) {
+    public int[] sortArrayByParity(int[] A) {
         int[] result = new int[A.length];
         int index = 0;
         for (int i=0; i<A.length; i++) {
