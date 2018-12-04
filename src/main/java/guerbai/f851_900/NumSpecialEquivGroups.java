@@ -1,5 +1,9 @@
 package guerbai.f851_900;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class NumSpecialEquivGroups {
 
     public int numSpecialEquivGroups(String[] A) {

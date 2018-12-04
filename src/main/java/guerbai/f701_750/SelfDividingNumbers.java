@@ -1,5 +1,8 @@
 package guerbai.f701_750;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SelfDividingNumbers {
 
     public Boolean isSelfDividing(int n) {

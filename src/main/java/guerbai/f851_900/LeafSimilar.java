@@ -1,5 +1,10 @@
 package guerbai.f851_900;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import guerbai.util.TreeNode;
+
 public class LeafSimilar {
 
     private void recursion(TreeNode root, List<Integer> leaf) {
