@@ -1,4 +1,4 @@
-package guerbai.f651_f700;
+package guerbai.f651_700;
 
 public class HasAlternatingBits {
 
